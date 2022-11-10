@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+:root {
+    --white-70: rgba(255, 255, 255, 70%);
+    --light-gray: #d3d3d3;
+    --josefin-sans-400-700: 'Josefin Sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: var(--josefin-sans-400-700); 
+    background-color: var(--light-gray);
+}
+
+#main > h3 { text-align: center; }
+
+#title {  text-align: center; }
+
+#img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#image {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+#tribute-info { background-color: var(--white-70); }
+
+#tribute-info > h3 { 
+    text-align: center; 
+    text-decoration: underline;
+}
+
+#tribute-info > ul {  
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+}
+
+#tribute-info > ul > li { line-height: 1.5; }
+
+.company-title { text-decoration: underline; }
+.bold { font-weight: bold; }
+
+@media screen and (max-width: 480px) {
+    #main > h3 {
+        font-size: 4.296vw;
+        max-width: 90%;
+        margin: 6vw auto;
+    }
+
+    #title {
+        margin-top: 9vw;
+        font-size: 6.249vw;
+    }
+
+    #img-div {
+        gap: 3vw;
+        margin-top: 9vw;
+    }
+
+    #image { width: 45%; }
+    #img-caption { font-size: 3.135vw; }
+
+    #tribute-info {
+        padding: 6vw;
+        margin: 9vw auto;
+        max-width: 90%;
+    }
+
+    #tribute-info > h3 { font-size: 4.296vw; }
+    #tribute-info > ul {
+        gap: 3vw;
+        padding: 3vw;
+        margin-top: 6vw;
+        font-size: 3.135vw;
+    }
+
+    .company-title { font-size: 4.296vw; }  
+}
+
+@media screen and (min-width: 480.5px) {
+    #main > h3 {
+        font-size: 2.864vw;
+        margin-bottom: 4vw;
+    }
+
+    #title {
+        margin-top: 6vw;
+        font-size: 4.166vw;
+    }
+
+    #img-div {
+        gap: 2vw;
+        margin-top: 6vw;
+    }
+
+    #image { width: 30%; }
+    #img-caption { font-size: 2.09vw; }
+
+    #tribute-info {
+        padding: 4vw;
+        margin: 6vw auto;
+        max-width: 90%;
+    }
+
+    #tribute-info > h3 { font-size: 2.864vw; }
+    #tribute-info > ul {
+        gap: 2vw;
+        padding: 2vw;
+        margin-top: 4vw;
+        font-size: 2.09vw;
+    }
+    .company-title { font-size: 2.864vw; }
+}
+
+@media screen and (min-width: 768.5px) {
+    #main > h3 { 
+        font-size: 1.432vw;
+        margin-bottom: 2vw;
+    }
+
+    #title {
+        margin-top: 3vw;
+        font-size: 2.083vw;
+    }
+
+    #img-div {
+        gap: 1vw;
+        margin-top: 3vw;
+    }
+
+    #image { width: 15%; }
+    #img-caption { font-size: 1.045vw; }
+
+    #tribute-info {
+        padding: 2vw;
+        margin: 3vw auto;
+        max-width: 60%;
+    }
+
+    #tribute-info > h3 { font-size: 1.432vw; }
+    #tribute-info > ul {
+        gap: 1vw;
+        padding: 1vw;
+        margin-top: 2vw;
+        font-size: 1.045vw;
+    }
+
+    .company-title { font-size: 1.432vw; }
+}
